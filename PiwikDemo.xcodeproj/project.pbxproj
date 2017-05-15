@@ -13,6 +13,8 @@
 		AE1446E21EC9C5CA00CC4B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1446E01EC9C5CA00CC4B48 /* Main.storyboard */; };
 		AE1446E41EC9C5CA00CC4B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1446E31EC9C5CA00CC4B48 /* Assets.xcassets */; };
 		AE1446E71EC9C5CA00CC4B48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1446E51EC9C5CA00CC4B48 /* LaunchScreen.storyboard */; };
+		AE1446F01EC9D2BC00CC4B48 /* PiwikManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1446EF1EC9D2BC00CC4B48 /* PiwikManager.swift */; };
+		AE1446F41EC9E94000CC4B48 /* piwiktracker.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = AE1446F11EC9E93F00CC4B48 /* piwiktracker.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		AE1446E31EC9C5CA00CC4B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE1446E61EC9C5CA00CC4B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1446E81EC9C5CA00CC4B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1446EF1EC9D2BC00CC4B48 /* PiwikManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PiwikManager.swift; path = piwik/PiwikManager.swift; sourceTree = "<group>"; };
+		AE1446F21EC9E94000CC4B48 /* piwiktracker v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "piwiktracker v2.xcdatamodel"; sourceTree = "<group>"; };
+		AE1446F31EC9E94000CC4B48 /* piwiktracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = piwiktracker.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 		AE1446D01EC9C5CA00CC4B48 = {
 			isa = PBXGroup;
 			children = (
+				AE1446F11EC9E93F00CC4B48 /* piwiktracker.xcdatamodeld */,
 				AE1446DB1EC9C5CA00CC4B48 /* PiwikDemo */,
 				AE1446DA1EC9C5CA00CC4B48 /* Products */,
 				20C3AE3392ECF4F6126DA8BB /* Pods */,
@@ -78,6 +84,7 @@
 		AE1446DB1EC9C5CA00CC4B48 /* PiwikDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AE1446EE1EC9D29E00CC4B48 /* Piwik */,
 				AE1446DC1EC9C5CA00CC4B48 /* AppDelegate.swift */,
 				AE1446DE1EC9C5CA00CC4B48 /* ViewController.swift */,
 				AE1446E01EC9C5CA00CC4B48 /* Main.storyboard */,
@@ -86,6 +93,14 @@
 				AE1446E81EC9C5CA00CC4B48 /* Info.plist */,
 			);
 			path = PiwikDemo;
+			sourceTree = "<group>";
+		};
+		AE1446EE1EC9D29E00CC4B48 /* Piwik */ = {
+			isa = PBXGroup;
+			children = (
+				AE1446EF1EC9D2BC00CC4B48 /* PiwikManager.swift */,
+			);
+			name = Piwik;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +138,7 @@
 				TargetAttributes = {
 					AE1446D81EC9C5CA00CC4B48 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3N53L8T4G7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1446F41EC9E94000CC4B48 /* piwiktracker.xcdatamodeld in Resources */,
 				AE1446E71EC9C5CA00CC4B48 /* LaunchScreen.storyboard in Resources */,
 				AE1446E41EC9C5CA00CC4B48 /* Assets.xcassets in Resources */,
 				AE1446E21EC9C5CA00CC4B48 /* Main.storyboard in Resources */,
@@ -213,6 +230,7 @@
 			files = (
 				AE1446DF1EC9C5CA00CC4B48 /* ViewController.swift in Sources */,
 				AE1446DD1EC9C5CA00CC4B48 /* AppDelegate.swift in Sources */,
+				AE1446F01EC9D2BC00CC4B48 /* PiwikManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -324,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -338,6 +356,7 @@
 			baseConfigurationReference = 325301F1352D669F5F0850AF /* Pods-PiwikDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3N53L8T4G7;
 				INFOPLIST_FILE = PiwikDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -352,6 +371,7 @@
 			baseConfigurationReference = 82752C8786AC831FF098E127 /* Pods-PiwikDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3N53L8T4G7;
 				INFOPLIST_FILE = PiwikDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -380,8 +400,24 @@
 				AE1446ED1EC9C5CA00CC4B48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE1446F11EC9E93F00CC4B48 /* piwiktracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE1446F21EC9E94000CC4B48 /* piwiktracker v2.xcdatamodel */,
+				AE1446F31EC9E94000CC4B48 /* piwiktracker.xcdatamodel */,
+			);
+			currentVersion = AE1446F21EC9E94000CC4B48 /* piwiktracker v2.xcdatamodel */;
+			name = piwiktracker.xcdatamodeld;
+			path = Pods/PiwikTracker/PiwikTracker/piwiktracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AE1446D11EC9C5CA00CC4B48 /* Project object */;
 }

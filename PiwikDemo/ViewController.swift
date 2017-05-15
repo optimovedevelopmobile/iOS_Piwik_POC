@@ -1,25 +1,22 @@
-//
-//  ViewController.swift
-//  PiwikDemo
-//
-//  Created by Noy Nanthan Grisaru on 15/05/2017.
-//  Copyright © 2017 Noy. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var outputLabel: UILabel!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        PiwikManager.shared.reportViewReached("root", in: "Main", force: true)
     }
-
-
+    
+    @IBAction func clicked(_ sender: UIButton) {
+        
+        PiwikManager.shared.respotSocialInteraction("like", on: "Benni", forNetwork: "Facebook")
+    }
 }
-
