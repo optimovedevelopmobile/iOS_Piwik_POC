@@ -1,0 +1,14 @@
+PODS:
+  - PiwikTracker (3.3.0):
+    - PiwikTracker/Core (= 3.3.0)
+  - PiwikTracker/Core (3.3.0)
+
+DEPENDENCIES:
+  - PiwikTracker
+
+SPEC CHECKSUMS:
+  PiwikTracker: 7147287d30a3192289bef9cddb2b5342d67dae43
+
+PODFILE CHECKSUM: 32a71c61253be587171b01363e34d07a428535b3
+
+COCOAPODS: 1.2.1
